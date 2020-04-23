@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size:16px;
 }
 
 body {
@@ -104,8 +104,22 @@ body {
     margin-right: 10px;
     width: 25px;
 }
+/* 
+@media only screen and (max-width: 479px){
+    .banner .card .heading {
+        color: red;
+        font-family: "Times New Roman";
+        text-align: center;
+        font-size: 2rem;
+        /* font-weight: 700; */
+        /* margin-bottom: 0px;
+        padding: 5vw;
+    }
 
-@media only screen and (max-width: 725px) {
+    .Address-heading{
+        font-size: 1rem;
+    }
+    
     .row {
         flex-direction: column;
     }
@@ -118,7 +132,7 @@ body {
     .inrow{
         flex-wrap: wrap;
     }
-}
+} */ 
 
 /*---------------------------------------------------------------*/
 /* Add a black background color to the top navigation */
@@ -153,6 +167,10 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     font-size: 2rem;
+}
+.Address-heading{
+    /* font-size: 2rem; */
+    color: black;
 }
 .Education {
     box-shadow: 0 0 15px yellowgreen;
@@ -203,7 +221,21 @@ margin:10px;
     border-color: black;
     box-shadow: 0 0 15px black;
     flex-wrap: wrap;
+    height: auto;
 }
+
+.Hobbies-box{
+    margin:5px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    border-color: black;
+    box-shadow: 0 0 15px black;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 200vh;
+}
+
 .inrow{
     display: flex;
     flex-direction: row;
@@ -247,7 +279,60 @@ margin:10px;
 
 .left{
     text-align: justify;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2vw;
+}
+
+.contact-image {
+    width:50vh;
+    height: 50vh;
+}
+
+@media only screen  and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+    }
+    .row .image {
+        order: -1;
+    }
+    .row .my-image {
+        width: 40vw;
+    }
+    .inrow{
+        flex-wrap: wrap;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    .left{
+        font-size: 1rem;
+    }
+    .banner .card .heading {
+        color: red;
+        font-family: "Times New Roman";
+        text-align: center;
+        font-size: 2.5rem;
+        /* font-weight: 700; */
+        /* margin-bottom: 0px; */
+        padding: 5vw;
+    }
+    
+    .contact-image{
+        width:40vh;
+        height: 30vh;
+    }
+    .Address{
+        font-size: 1.7rem;
+    }
+    .Education-heading{
+        font-size: 1.5rem;
+    }
+    .Technology-heading{
+        font-size: 1.5rem;
+    }
+    .Hobby-heading{
+        font-size: 1.5rem;
+    }
+
 }
